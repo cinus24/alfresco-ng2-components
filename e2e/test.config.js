@@ -74,6 +74,8 @@ module.exports = {
 
             if (HOST_IDENTITY) {
                 baseUrl = HOST_IDENTITY
+            } else if (HOST_SSO) {
+                baseUrl = HOST_SSO
             } else if (PROXY) {
                 baseUrl = PROXY
             } else {
