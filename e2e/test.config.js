@@ -59,11 +59,11 @@ module.exports = {
             let baseUrl;
 
             if (HOST_SSO) {
-                baseUrl = HOST_SSO
+                baseUrl = HOST_SSO;
             } else if (PROXY) {
-                baseUrl = PROXY
+                baseUrl = PROXY;
             } else {
-                baseUrl = HOST
+                baseUrl = HOST;
             }
 
             return `http://${baseUrl}/auth/realms/alfresco`;
@@ -73,13 +73,13 @@ module.exports = {
             let baseUrl;
 
             if (HOST_IDENTITY) {
-                baseUrl = HOST_IDENTITY
+                baseUrl = HOST_IDENTITY;
             } else if (HOST_SSO) {
-                baseUrl = HOST_SSO
+                baseUrl = HOST_SSO;
             } else if (PROXY) {
-                baseUrl = PROXY
+                baseUrl = PROXY;
             } else {
-                baseUrl = HOST
+                baseUrl = HOST;
             }
 
             return `http://${baseUrl}/auth/admin/realms/alfresco`;
