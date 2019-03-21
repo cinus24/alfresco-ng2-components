@@ -209,13 +209,13 @@ describe('Upload - User permission', () => {
             done();
         });
 
-        it('[C260130] Should be allowed to Drag and drop a file/folder in a folder with manager permissions', () => {
+        xit('[C260130] Should be allowed to Drag and drop a file/folder in a folder with manager permissions', () => {
             contentServicesPage.checkDragAndDropDIsDisplayed();
 
             contentServicesPage.dragAndDropFile(emptyFile.location);
             contentServicesPage.checkContentIsDisplayed(emptyFile.location);
 
-            contentServicesPage.dragAndDropFolder(folder.name);
+            contentServicesPage.dragAndDropFolder(folder.location);
             contentServicesPage.checkContentIsDisplayed(folder.name);
 
             let fileInTheUploadedFolder = 'share_profile_pic.png';
